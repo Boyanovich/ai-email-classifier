@@ -4,10 +4,13 @@ import email
 from email.header import decode_header
 import requests
 from openai import OpenAI
+from dotenv import load_dotenv
 
-EMAIL_USER = "YOUR_EMAIL@gmail.com"
-EMAIL_PASS = "YOUR_APP_PASSWORD"
-OPENROUTER_KEY = "YOUR_OPENROUTER_API_KEY"
+load_dotenv()
+
+EMAIL_USER = os.getenv("EMAIL_USER")
+EMAIL_PASS = os.getenv("EMAIL_PASS")
+OPENROUTER_KEY = os.getenv("OPENROUTER_KEY")
 MODEL_LIST_URL = "https://shir-man.com/api/free-llm/top-models"
 
 def get_best_model():
