@@ -14,5 +14,5 @@ This script automates the monitoring, fetching, and AI-based classification of u
 
 1. Install required dependencies: `pip install -r requirements.txt`
 2. Create a `prompt.txt` file in the same directory and define your AI classification instructions.
-3. Update the `EMAIL_USER`, `EMAIL_PASS`, and `OPENROUTER_KEY` variables inside `main.py` with your real credentials.
+3. Create a `.env` file in the root directory and add your credentials (`EMAIL_USER`, `EMAIL_PASS`, `OPENROUTER_KEY`).
 4. Execute the script: `python main.py`
